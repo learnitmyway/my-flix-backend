@@ -1,9 +1,13 @@
  .PHONY: \
+	run \
 	start \
-	db/start db/interact db/stop \
+	db/start db/interact db/stop
+
+run:
+	node server.js
 
 start:
-	node server.js
+	npx nodemon
 
 db/interact:
 	docker exec \
