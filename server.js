@@ -3,6 +3,7 @@ const app = express()
 const port = 4005
 
 app.get('/api/videos', (req, res) => {
+  console.log('GET /api/videos')
   const resBody = {
     videos: [
       {
