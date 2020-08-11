@@ -3,7 +3,7 @@
 	start \
 
 run:
-	node server.js
+	node src/server.js
 
 start:
 	npx nodemon
