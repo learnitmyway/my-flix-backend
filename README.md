@@ -1,7 +1,5 @@
 # My Flix Backend
 
-## Local development
+## Deployment
 
-### Postgres
-
-Interact with `docker exec --tty --interactive pg-docker psql --host=localhost --username=postgres --dbname=postgres`
+- Infrastructure `terraform apply`
