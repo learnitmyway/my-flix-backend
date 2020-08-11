@@ -1,23 +1,20 @@
 const express = require('express')
+const VideosAccess = require('./videosAccess')
 const app = express()
 const port = 4005
 
-app.get('/api/videos', (req, res) => {
+app.get('/api/videos', async (req, res) => {
   // eslint-disable-next-line no-console
   console.log('GET /api/videos')
+
+  const videosAccess = new VideosAccess()
+
+  const videos = await videosAccess.getAllVideos()
+
   const resBody = {
-    videos: [
-      {
-        id: '1',
-      },
-      {
-        id: '2',
-      },
-      {
-        id: '3',
-      },
-    ],
+    videos,
   }
+
   res.send(resBody)
 })
 

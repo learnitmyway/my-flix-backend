@@ -2,7 +2,7 @@ module.exports = {
   extends: ['eslint:recommended'],
   plugins: [],
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2017,
   },
   env: {
     node: true,
