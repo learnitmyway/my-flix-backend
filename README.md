@@ -1,5 +1,5 @@
 # My Flix Backend
 
-## Deployment
+## Set up
 
-- Infrastructure `terraform apply`
+- Add DB with `terraform apply`
