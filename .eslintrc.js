@@ -8,7 +8,6 @@ module.exports = {
     node: true,
   },
   rules: {
-    'no-console': 'warn',
     eqeqeq: 'error', // strict equals
   },
   settings: {},
